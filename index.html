@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>１冊で全て身に付くHTML & CSSとWebデザイン入門講座</title>
+</head>
+
+<body>
+    <h1>猫の一日</h1>
+    <p>ひたすら寝ています</p>
+
+
+    <h2>テーブルタグ</h2>
+
+    <table border="1"> <!-- borderでフチをつけられる -->
+        <!-- trタグ：Table Rowの略で、表の１行を囲む -->
+        <tr>
+            <!-- TableHeader　表の見出しとなるセルを作成 -->
+            <th>プラン名</th>
+            <th>料金</th>
+        </tr>
+
+        <tr>
+            <!-- TableData　表のデータとなるセルを作成 -->
+            <td>わくわくプラン</td>
+            <td>月額 2,900円</td>
+        </tr>
+
+        <tr>
+            <!-- TableData　表のデータとなるセルを作成 -->
+            <td>にこにこプラン</td>
+            <td>月額 1,900円</td>
+        </tr>
+    </table>
+
+    <h2>セルをつなげる（横）</h2>
+
+    <table border="1">
+        <tr>
+            <th colspan="2">横 / colspan属性</th>
+        </tr>
+        <tr>
+            <td>セル１</td>
+            <td>セル２</td>
+        </tr>
+    </table>
+
+    <h2>セルをつなげる（縦）</h2>
+
+    <table border="1">
+        <tr>
+            <th>縦 / rowspan属性</th>
+        </tr>
+        <tr>
+            <td rowspan="2">セル１</td>
+            <td>セル２</td>
+        </tr>
+        <tr>
+            <td>セル3</td>
+        </tr>
+    </table>
+
+    <h2>フォーム / formタグ</h2>
+    <p>主な属性 action：データの送信先ページを指定、method：データの転送方法の指定（主にgetかpostを入力）、name：フォームの名前を指定</p>
+
+    <form action="example.php" method="get" name="example">
+        <!-- ここにフォームの部品が入る*/ -->
+    </form>
+
+    <p> </p>
+    <p> </p>
+
+    名前 <input type="text" placeholder="入力欄にあらかじめ入るテキスト">
+
+    <input type="radio" name="gender" value="男" checked>
+    <input type="radio" name="gender" value="女">
+    <input type="radio" name="gender" value="その他">
+
+    <input type="checkbox" name="color" value="赤" checked>
+    <input type="checkbox" name="color" value="青">
+    <input type="checkbox" name="color" value="黄">
+
+    <select name="ketue">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="O">O</option>
+        <option value="AB">AB</option>
+        <option value="不明">不明</option>
+    </select>
+
+    <textarea name="message" placeholder="入力"></textarea>
+
+    <h2>より使いやすいフォームにしよう</h2>
+    <input type="checkbox" value="tests" id="ch">
+    <label for="ch">test</label> <!-- 文字を押してもチェックが入る -->
+
+    <blockquote>test</blockquote> <!-- 引用文 -->
+
+    <p class="css">しーえすえす</p>
+
+    <div class="flexbox">
+        <p class="item">フレックスボックス</p>
+        <p class="item">フレックスボックス</p>
+        <p class="item">フレックスボックス</p>
+        <p class="item">フレックスボックス</p>
+        <p class="item">フレックスボックス</p>
+        <p class="item">フレックスボックス</p>
+        <p class="item">フレックスボックス</p>
+        <p class="item">フレックスボックス</p>
+        <p class="item">フレックスボックス</p>
+        <p class="item">フレックスボックス</p>
+        <p class="item">フレックスボックス</p>
+        <p class="item">フレックスボックス</p>
+        <p class="item">フレックスボックス</p>
+        <p class="item">フレックスボックス</p>
+        <p class="item">フレックスボックス</p>
+        <p class="item">フレックスボックス</p>
+        <p class="item">フレックスボックス</p>
+        <p class="item">フレックスボックス</p>
+        <p class="item">フレックスボックス</p>
+        <p class="item">フレックスボックス</p>
+        <p class="item">フレックスボックス</p>
+        <p class="item">フレックスボックス</p>
+        <p class="item">フレックスボックス</p>
+        <p class="item">フレックスボックス</p>
+    </div>
+
+    <div class="grid">
+        <p class="gridITME">グリッドアイテム１</p>
+        <p class="gridITME">グリッドアイテム２</p>
+        <p class="gridITME">グリッドアイテム３</p>
+        <p class="gridITME">グリッドアイテム４</p>
+        <p class="gridITME">グリッドアイテム５</p>
+        <p class="gridITME">グリッドアイテム６</p>
+    </div>
+
+</html>

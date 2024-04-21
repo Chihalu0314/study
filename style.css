@@ -1,0 +1,57 @@
+@charset "UTF-8"; /* 文字化けを防ぐ */
+
+body {
+    /* background-color: rgb(231, 231, 231); */
+    background-image: url(sarasa.jpg);
+    background-repeat: no-repeat; /* 折り返さない */
+    background-position: center; /* センターに表示 */
+    color: blueviolet; 
+}
+
+/*
+h2 { セレクター　
+    font-size: 20px;　プロパティ＆値
+}
+*/
+
+.css {
+    margin: 100px; /* 要素の外の余白 */
+    padding: 10px; /* 要素の中の余白 */
+    background-color: cadetblue;
+    border-width: thick;
+    border-style: solid;
+}
+
+.flexbox {
+    display: flex;
+
+    /* 子要素の並ぶ向き  row：左から右 row-reverse：右から左 column：上から下に表示 column-reverse：下から上に表示*/
+    flex-direction: row; 
+
+    /* 子要素の折り返し　nowrap：折り返しせず、一行に並べる　warp：折り返し、複数行に下から上へ並べる　warp-reverse：折り返し、複数行に上から下へ並べる */
+    flex-wrap: wrap;
+
+    /* 水平方向の揃え */
+    justify-content: flex-start;
+
+    /* 垂直方向の揃え */
+    align-items: end;
+
+    /* 複数行にしたときの揃え */
+    align-content: stretch;
+
+    height: 20vh;
+
+    background-color: rgb(158, 194, 226);
+    padding: 30px;
+    font-weight: bold;
+} 
+
+.flexbox .item {
+    margin: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+}
